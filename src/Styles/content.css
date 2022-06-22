@@ -1,0 +1,241 @@
+/* COLORS */
+/* TINTS AND SHADES  
+
+tint:#292933;
+shade:#fafaff
+*/
+
+.main-content {
+  /* background: linear-gradient(
+    144.88deg,
+    rgba(255, 255, 255, 0.3) -3.98%,
+    rgba(75, 173, 239, 0.2) 21.27%,
+    rgba(0, 183, 155, 0.6) 71.28%
+  ); */
+  background-color: #fafaff;
+  padding-top: 25vh;
+  color: #292933;
+  /* height: 92vh; */
+}
+.main-content-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto 50px auto;
+}
+
+.main-content-left h1 {
+  width: 33.3333%;
+  text-align: center;
+}
+
+.main-content-l {
+  /* position: absolute;
+  left: 10em; */
+}
+.main-content-r {
+  /* position: absolute;
+  left: 56vw;
+  top: 19.5rem; *
+  position: relative;*/
+  /* left: 18vw;
+  top: -4rem; */
+}
+/* .main-content-low{
+    border: 1px solid red;
+} */
+.main-content-low p {
+  font-size: 1.6em;
+  width: 51vw;
+  /* padding-left: 5em; */
+  margin-left: 15em;
+  margin-top: -19px;
+}
+.but {
+  background-color: whitesmoke;
+  width: 12rem;
+  height: 4rem;
+  z-index: -5;
+}
+.sear {
+  /* width: 80vw; */
+  /* margin: 3rem; */
+  /* margin-left: 10rem; */
+  height: 61px;
+}
+
+.button-Container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* .main-content-search {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+.main-content-buttom {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  /* padding: 22px; */
+  /* background-color: #e0e0ff; */
+}
+
+.main-content-buttom span {
+  background-color: #292933;
+  color: #fff;
+  font-size: 24px;
+}
+
+::-webkit-input-placeholder,
+input {
+  font-size: 18px !important;
+}
+
+.main-content-down,
+.main-content-down-l {
+  display: flex;
+  gap: 20px;
+}
+.main-content-down span,
+.main-content-down-l span {
+  border-radius: 11px;
+  padding: 12px 24px;
+  /* margin-right: 0.9rem; */
+  box-shadow: 7px 7px 7px;
+}
+
+.main-content-buttom span:nth-child(odd) {
+  border-top: 4px #22d8d8 solid;
+}
+.main-content-buttom span:nth-child(even) {
+  border-top: 4px orangered solid;
+}
+
+/* .main-content-down-l span {
+  border: 1px solid;
+  /* font-size: 32px; *
+  border-radius: 11px;
+  padding: 4px;
+  margin-right: 0.9rem;
+  margin-top: 21px;
+  box-shadow: 7px 7px 7px;
+} */
+/* .main-content-down-l span {
+  border: 1px solid;
+  font-size: 32px;
+  border-radius: 11px;
+  padding: 4px;
+  margin-right: 0.9rem;
+  margin-top: 21px;
+} */
+.main-content-down-l span:hover {
+  background-color: rgb(81, 68, 68);
+  color: white;
+  padding: 10px;
+}
+.main-content-down span:hover {
+  background-color: rgb(81, 68, 68);
+  padding: 10px;
+  color: white;
+}
+
+/* @media only screen and (max-width:600px) {
+    .main-content-l{
+        position: relative;
+        left: 0;
+    }
+} */
+
+@media only screen and (max-width: 850px) {
+  .main-content {
+    padding-top: 7vh;
+  }
+  .main-content-l {
+    left: 10rem;
+  }
+  .main-content-r {
+    position: relative;
+    left: 26vw;
+    top: -4rem;
+  }
+  .main-content-low p {
+    font-size: 1.3rem;
+    width: 58vw;
+    margin-left: 9em;
+    margin-top: -21px;
+  }
+  .sear {
+    width: 72vw;
+    margin: 2rem;
+    margin-left: 9rem;
+    height: 50px;
+  }
+  .but {
+    background-color: whitesmoke;
+    width: 9rem;
+    height: 3.2rem;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .main-content-buttom {
+    padding: 8px;
+    margin-top: 35px;
+  }
+  .main-content-down span {
+    font-size: 17px;
+    display: block;
+    width: 44rem;
+    margin-left: 25px;
+    margin-bottom: 27px;
+  }
+  .main-content-down-l span {
+    font-size: 18px;
+    display: block;
+    width: 44rem;
+    margin-left: 25px;
+    margin-bottom: 27px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-content-l {
+    position: relative;
+    left: 0;
+  }
+  .main-content-r {
+    position: relative;
+    left: 0vw;
+    top: -1rem;
+  }
+  .main-content-low p {
+    font-size: 0.9rem;
+    width: 75vw;
+    margin-left: 3em;
+    margin-top: 7px;
+  }
+  .sear {
+    width: 93vw;
+    /* margin: 2rem; */
+    margin-left: 1rem;
+    height: 50px;
+  }
+  .main-content-down span {
+    display: block;
+    font-size: 18px;
+    margin-top: 12px;
+    width: 20rem;
+  }
+  .main-content-down-l span {
+    display: block;
+    font-size: 18px;
+    width: 20rem;
+  }
+  .main-content {
+    height: 148vh;
+  }
+}

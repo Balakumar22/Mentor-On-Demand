@@ -1,0 +1,196 @@
+.filter-container {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  padding: 50px 0 25px 0;
+  margin-bottom: 20px;
+}
+
+.filter-container-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 20px;
+}
+
+.filter-container-bottom {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* width: 80%;
+  margin: 0px auto 50px auto; */
+  row-gap: 10px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box .icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  color: #292933;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  cursor: pointer;
+}
+
+.filter-search {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 0.5px solid #ccc;
+}
+
+/* .search-box input:focus-visible {
+  outline: #ccccff;
+} */
+
+.filter-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.dropDown {
+  visibility: hidden;
+}
+
+.dropDown.active {
+  visibility: visible;
+}
+
+.Sort {
+  position: relative;
+  width: 50%;
+  justify-self: end;
+}
+
+.Category,
+.Skills,
+.Price {
+  position: relative;
+  width: 100%;
+  padding: 6px 0;
+}
+
+/* .Sort button, */
+.Category button,
+.Skills button,
+.Price button,
+.sort-btn {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  background-color: #292933;
+  color: #ccccff;
+  cursor: pointer;
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  justify-self: end;
+  width: auto;
+}
+
+.clicked {
+  outline: 4px solid #9292be !important;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.dropDown {
+  position: absolute;
+  color: #ccccff;
+  background-color: #292933;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 12px 24px;
+  margin-top: 2px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.Sort .dropDown,
+.Price .dropDown {
+  width: 100%;
+}
+
+.Sort .dropDown p,
+.Category .dropDown li,
+.Price .dropDown li {
+  cursor: pointer;
+}
+
+.dropDown ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0;
+}
+
+.dropDown ul li.active {
+  font-weight: bold;
+}
+
+.dropDown ul li {
+  list-style: none;
+}
+
+.selectedSkills {
+  border-bottom: 1px solid #ccccff;
+  padding: 10px 0;
+}
+
+.Skills input[type="search"] {
+  margin-top: 10px;
+  font-size: 12px;
+  border: none;
+  padding: 0px 8px;
+}
+
+.Skills input[type="search"]::placeholder {
+  font-size: 14px !important;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-item input {
+  height: 15px;
+  width: 15px;
+}
+
+.skill-item label {
+  margin: 0;
+}
+
+/* MENTOR GRID */
+
+.mentors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 80px;
+  width: 80%;
+  margin: 5rem auto;
+}
+
+@media (max-width: 960px) {
+  .filter-container {
+    width: 100%;
+  }
+}
